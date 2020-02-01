@@ -1,0 +1,20 @@
+    var isJanusWeb = (typeof elation != 'undefined');
+
+    room.update = function()
+    {
+            if (document.curves !== 'undefined' && isJanusWeb)
+            {
+                    if (document.curves.length == 0)
+                    {
+                            var curveType="chordal"; // centripetal, chordal, or catmullrom
+                            document.curves.push([ 'point', new THREE.CatmullRomCurve3([
+                                    new THREE.Vector3(-3.9049611958166106, 0.6674208827771511, 4.706226587825713),
+                                    new THREE.Vector3(-8.613925709591436, 0.7542634504938688, 4.97509622457764),
+                            ], curveType=curveType), Vector(-5.782899439712048, 0.9116554937484909, 0.48550345262075095), 2 ]);
+                            document.curves.push([ 'point', new THREE.CatmullRomCurve3([
+                                    new THREE.Vector3(-14.642650932788543, 2.5130164777660835, 5.010852214703833),
+                                    new THREE.Vector3(-19.21416208937156, 5.357866885581645, 3.3927035604818903),
+                            ], curveType=curveType), Vector(10.17535148467771, 3.106132843655053, -12.397996611117666), 3 ]);
+                    }
+            }
+    }
