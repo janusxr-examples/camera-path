@@ -5,10 +5,16 @@
  <Assets>
   <AssetScript src="PathConstructor.js"/>
  </Assets>
- <Room use_local_asset="room_plane" visible="false">
+ <Room use_local_asset="room_plane" visible="true" zdir="0 0 -1" >
   <Object col="0 0.1 0" collision_id="cube" id="cube" js_id="Tracking_Box" pos="0 1 10" scale="0.2 0.2 0.2"/>
   <Object col="#00ff00" collision_id="cube" id="cube" js_id="End_Box" pos="2 3 60" scale="0.2 0.2 0.2"/>
   <Object col="#00ff00" collision_id="cube" id="cube" js_id="Pathing_Box" pos="0 1 7"/>
+
+  <Object col="#7BC8A4" id="plane" js_id="plane1" pos="0 0 -7" scale="10 10 1" ydir="0 0 -1" zdir="0 1 0"/>
+  <Object col="#ef2d5e" id="sphere" js_id="sphere1" pos="0.2 1.3 -8.5" scale="2 2 2"/>
+  <Object col="#ffc65d" id="cylinder" js_id="cylinder1" pos="-2 0 -7" scale="1 1.5 1"/>
+  <Object col="#4cc3d9" id="cube" js_id="cube1" pos="2 0.5 -8" rotation="0 45 0"/>
+  <Object col="#ff73ff" id="cone" js_id="cone1" pos="-0.6 0.1 -6.5"/>
  </Room>
 </FireBoxRoom>
 -->
